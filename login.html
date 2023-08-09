@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <body>
+    <div class="login-page">
+      <div class="form">
+        <h2>Login</h2>
+        <form id="loginForm">
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            autocomplete="off"
+          /><br /><br />
+
+          <label for="password">Password:</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            required
+            autocomplete="off"
+          /><br /><br />
+
+          <button type="button" class="btn" onclick="attemptLogin()">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Login
+          </button>
+
+          <div id="errorMessage" class="message" style="display: none"></div>
+        </form>
+      </div>
+    </div>
+
+    <script>
+      function attemptLogin() {
+        var email = document.getElementById("email").value;
+        var password = document.getElementById("password").value;
+
+        if (
+          email === "skiffington.braden@yahoo.ca" &&
+          password === "Skiff_21"
+        ) {
+          // Display the transition screen
+          document.getElementById("errorMessage").style.display = "none";
+          window.location.href = "transition.html";
+        } else {
+          document.getElementById("errorMessage").textContent =
+            "Invalid email or password.";
+          document.getElementById("errorMessage").style.display = "block";
+        }
+      }
+    </script>
+  </body>
+</html>

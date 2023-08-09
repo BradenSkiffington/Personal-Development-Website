@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>My Portfolio</title>
+  </head>
+  <body>
+    <nav class="sidenav">
+      <ul>
+        <br clear="all" />
+        <br clear="all" />
+        <br clear="all" />
+        <br clear="all" />
+        <li><a href="index.html">Home</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="content">
+      <header class="header">
+        <span class="menu-icon">&#9776;</span>
+        <h1 class="header-title">Personal Development Website</h1>
+        <nav class="navbar"></nav>
+      </header>
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <section id="about" class="section">
+      <div class="container">
+        <h2>About Myself</h2>
+        <div class="about-content">
+          <p>
+            My name is Braden Skiffington and I'm 21 years old while attending
+            Keyin College's Software Development Program. I'm currently in the
+            second semester while the program consists of four. The first
+            semester focuses on introducing you to software development and the
+            essentials to it. The second semesters focuses on Front-End
+            Developement while the third semester focuses on Back-End
+            Developement. The fourth and final semester of the program will
+            focus on DevOps, Cloud Operations, along with Data Structures.
+          </p>
+
+          <div class="image-container">
+            <div class="image-wrapper" id="image-wrapper">
+              <img
+                src="PW Images/PopsXmasParty.png.jpg"
+                alt="Pop's Diner Xmas Party"
+              />
+              <img src="PW Images/Scoutsmiling.png.jpg" alt="Scout Smiling" />
+              <img
+                src="PW Images/HoldingScoutOnesie.jpg"
+                alt="Scout's Onesie"
+              />
+              <img
+                src="PW Images/MeHudsonBlake.jpg"
+                alt="Me, Hudson and Blake @ Grad"
+              />
+              <img src="PW Images/puppyscoutnap.jpg" alt="Scout Napping" />
+              <img src="PW Images/ScoutBackwards.jpg" alt="Scout on Couch" />
+              <img
+                src="PW Images/SIgnalHillHannah.jpg"
+                alt="Me & Hannah @ Signal Hill"
+              />
+            </div>
+            <div class="scrollbar-container">
+              <div class="scrollbar"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="quote-container">
+          <blockquote>
+            <p id="funny-quote">Funny quote will appear here!</p>
+            <p id="quote-author"></p>
+          </blockquote>
+          <button id="generate-btn">Generate New Quote</button>
+          <button id="speak-btn">Listen</button>
+        </div>
+        <div class="controls">
+          <label for="voices">Select a Voice:</label>
+          <select id="voices">
+            <!-- Voices will be populated dynamically using JavaScript -->
+          </select>
+          <label for="speech-rate">Speech Rate:</label>
+          <input
+            type="range"
+            id="speech-rate"
+            min="0.5"
+            max="2"
+            step="0.1"
+            value="1"
+          />
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2023 Braden Skiffington</p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

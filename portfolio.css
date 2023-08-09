@@ -1,0 +1,693 @@
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: whitesmoke;
+}
+
+/* Side Navigation */
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to right, #2979ff, #30b0ff);
+  color: #fff;
+  overflow-x: hidden;
+  padding-top: 60px;
+  z-index: 1;
+  transition: width 0.3s ease;
+}
+
+.sidenav.active {
+  width: 250px;
+}
+
+.sidenav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidenav ul li {
+  padding: 15px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.sidenav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  display: block;
+  transition: background-color 0.3s ease, border-radius 0.3s ease;
+}
+
+.sidenav ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+}
+
+.sidenav ul li a i {
+  margin-right: 8px;
+}
+
+.sidenav ul li a.active {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .sidenav {
+    width: 0; /* Hide the menu on smaller screens */
+  }
+
+  .sidenav.active {
+    /* Show the menu when active */
+    width: 250px;
+  }
+}
+
+.content {
+  padding-top: 70px; /* Adjusted padding to add space between header and content */
+}
+
+.menu-icon {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+section {
+  padding: 50px 0;
+}
+
+.project {
+  margin-bottom: 30px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.project:hover {
+  transform: translateY(-5px);
+}
+
+.project h3 {
+  margin-bottom: 10px;
+  font-size: 24px;
+  color: #333;
+}
+
+.project p {
+  font-size: 16px;
+  color: #555;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+footer p {
+  font-size: 14px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to right, dodgerblue, #c99fff);
+  color: #fff;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.menu-icon {
+  font-size: 24px;
+  cursor: pointer;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 3;
+}
+
+.header-title {
+  font-size: 24px;
+  text-align: center;
+  flex-grow: 1;
+  position: relative;
+  font-family: "Arial", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 1.2;
+}
+
+.header-title::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  animation: underlineAnimation 2s infinite;
+}
+
+@keyframes underlineAnimation {
+  0% {
+    transform: scaleX(0);
+  }
+  50% {
+    transform: scaleX(1);
+  }
+  100% {
+    transform: scaleX(0);
+  }
+}
+
+.project img {
+  max-width: 375px;
+  height: auto;
+}
+
+.project.project-2 .form-group {
+  margin-bottom: 20px;
+}
+
+.project.project-2 .form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.project.project-2 .form-group input[type="text"],
+.project.project-2 .form-group input[type="date"],
+.project.project-2 .form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.project.project-2 .form-group textarea {
+  height: 100px;
+}
+
+.project.project-2 .form-group button {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.project.project-2 .form-group button:hover {
+  background-color: #45a049;
+}
+
+.project.project-2 #events-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project.project-2 .event {
+  width: 300px;
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.project.project-2 .event button {
+  padding: 6px 12px;
+  background-color: #ff6347;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.project.project-2 .event button:hover {
+  background-color: #e45036;
+}
+
+.image-container {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  padding-bottom: 10px;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.image-wrapper {
+  display: flex;
+  -webkit-overflow-scrolling: touch;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  width: 100%;
+}
+
+.image-wrapper::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  background-color: transparent;
+}
+
+.image-wrapper::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+}
+
+.image-wrapper img {
+  flex-shrink: 0;
+  width: 250px;
+  height: 450px;
+  object-fit: cover;
+  margin: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  scroll-snap-align: start;
+}
+
+.image-wrapper img:hover {
+  transform: scale(1.1);
+}
+
+.scrollbar-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 8px;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.scrollbar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+  transition: height 0.3s ease;
+}
+
+.contact-box {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.contact-box h3 {
+  margin-bottom: 10px;
+}
+
+.contact-box ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-box ul li {
+  margin: 0 5px;
+}
+
+.contact-box ul li a {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.contact-box ul li a img {
+  max-width: 100%;
+  height: auto;
+}
+
+.textbox {
+  height: 100px;
+}
+
+.contact-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.social-media-icons a {
+  display: inline-block;
+  width: 40px; /* Increased default width */
+  height: 40px; /* Increased default height */
+  margin: 0 5px;
+  border-radius: 50%;
+  background-color: #333;
+  transition: transform 0.3s ease;
+}
+
+.social-media-icons a:hover {
+  transform: scale(1.2); /* Increased scale when hovered over */
+}
+
+.social-media-icons a img {
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.social-media-icons a:hover img {
+  transform: scale(1.3); /* Increased scale when hovered over */
+}
+
+/* Additional styles */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  margin-bottom: 10px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contact-form input[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+}
+
+.contact-form input[type="submit"]:hover {
+  background-color: #555;
+}
+
+/* Custom styles for the play button */
+.project .project-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.project .project-header h3 {
+  margin-right: 10px;
+}
+
+.project .project-header .play-button {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.project .project-header .play-button:hover {
+  background-color: #45a049;
+}
+
+.project.project-3 {
+  background-color: #fff; /* Change background color to white */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.project.project-3:hover {
+  transform: translateY(-5px);
+}
+
+.project.project-3 h3 {
+  margin-bottom: 10px;
+  font-size: 24px;
+  color: #333;
+}
+
+.project.project-3 p {
+  font-size: 16px;
+  color: #555;
+}
+
+.project.project-3 .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project.project-3 .container > div {
+  margin-bottom: 10px;
+}
+
+.project.project-3 label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.project.project-3 input[type="text"],
+.project.project-3 input[type="datetime-local"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.project.project-3 button {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.project.project-3 button:hover {
+  background-color: #45a049;
+}
+
+.countdown-timer {
+  font-family: "Courier New", monospace;
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+  background-color: #222;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.countdown-timer .countdown-number {
+  /* Style for the actual time remaining (days, hours, etc.) */
+  display: inline-block;
+  padding: 0 5px;
+  border: 1px solid #0f0;
+  border-radius: 4px;
+  animation: flashRed 2s infinite alternate;
+}
+
+.countdown-timer::before {
+  /* Remove border and padding from the "Time Remaining" label */
+  content: "Time Remaining:";
+  font-size: 16px;
+  display: block;
+  margin-bottom: 5px;
+  border: none;
+  padding: 0;
+}
+
+.countdown-timer hr {
+  /* Remove the horizontal line */
+  border: none;
+  margin: 10px auto;
+  width: 50%;
+}
+
+@keyframes flashRed {
+  0% {
+    color: white;
+  }
+  100% {
+    color: red;
+  }
+}
+
+/* Countdown Actions */
+.countdown-actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.countdown-actions button {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.countdown-actions button:hover {
+  background-color: #45a049;
+}
+
+/* ... (other styles) ... */
+
+/* Styles for the footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+footer p {
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .header-title {
+    font-size: 20px;
+  }
+
+  .menu-icon {
+    margin-bottom: 10px;
+  }
+
+  .header {
+    flex-direction: column;
+  }
+
+  .quote-container {
+    padding: 10px;
+  }
+
+  .image-wrapper img {
+    width: 180px;
+    height: 320px;
+    margin: 5px;
+  }
+
+  section {
+    padding: 30px 0;
+  }
+
+  #about {
+    padding: 10px;
+  }
+
+  #about h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  #about p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  button {
+    max-width: 150px;
+  }
+
+  .controls {
+    flex-direction: row;
+  }
+
+  #speech-rate {
+    width: 120px;
+    margin-top: 0;
+  }
+}
+
+#snake-game-container {
+  position: relative;
+  width: 700px;
+  height: 700px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000; /* Set the background color to black (#000000) */
+}
+
+#gameCanvas {
+  border: 1px solid #fff;
+}
+
+#play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #643fb6;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}

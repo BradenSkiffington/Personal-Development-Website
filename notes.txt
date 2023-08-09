@@ -1,0 +1,5 @@
+To start local server, enter the following into your terminal: 
+    http-server
+
+To stop the server, do the following action in the terminal:
+    Ctrl + C

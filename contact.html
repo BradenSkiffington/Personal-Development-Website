@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="contact.css" />
+    <title>My Portfolio</title>
+    <style></style>
+  </head>
+  <body>
+    <nav class="sidenav">
+      <ul>
+        <br clear="all" />
+        <br clear="all" />
+        <br clear="all" />
+        <li><a href="index.html">Home</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="content">
+      <header class="header">
+        <span class="menu-icon">&#9776;</span>
+        <h1 class="header-title">Personal Development Website</h1>
+        <nav class="navbar"></nav>
+      </header>
+    </div>
+
+    <!-- Contents of contact.html -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>Contact Information</h2>
+        <p>
+          Feel free to get in touch with me. You can reach me at
+          skiffington.braden@yahoo.ca or connect with me on social media.
+        </p>
+
+        <div class="contact-box">
+          <h3>Social Medias:</h3>
+          <div class="social-media-icons">
+            <a
+              href="https://www.linkedin.com/in/braden-skiffington-561b6a249/"
+              target="_blank"
+            >
+              <img src="PW Images/linkedin.png" alt="LinkedIn" />
+            </a>
+            <a
+              href="https://www.facebook.com/braden.skiffington/"
+              target="_blank"
+            >
+              <img src="PW Images/facebook.png" alt="Facebook" />
+            </a>
+            <a href="https://www.instagram.com/skiffingtxn/" target="_blank">
+              <img src="PW Images/instagram.png" alt="Instagram" />
+            </a>
+          </div>
+        </div>
+
+        <form action="send_email.php" method="POST" class="contact-form">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Message:</label>
+          <textarea
+            id="message"
+            name="message"
+            class="textbox"
+            required
+          ></textarea>
+
+          <input type="submit" value="Send Email" />
+        </form>
+      </div>
+    </section>
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2023 Braden Skiffington</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

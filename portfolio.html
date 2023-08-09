@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="portfolio.css" />
+    <title>My Portfolio</title>
+  </head>
+  <center>
+  <body>
+    <nav class="sidenav">
+      <ul>
+        <br clear="all" />
+        <br clear="all" />
+        <br clear="all" />
+        <li><a href="index.html">Home</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <header class="header">
+      <span class="menu-icon">&#9776;</span>
+      <h1 class="header-title">Personal Development Website</h1>
+      <nav class="navbar"></nav>
+    </header>
+
+    <!-- Contents of portfolio.html -->
+    <section id="portfolio" class="section">
+      <div class="container">
+        <h2>Personal Projects</h2>
+        <br />
+        <div class="project">
+          <h3>Project 1 - Figma </h3>
+          <img src="PW Images/Figma 1.png">
+          <img src="PW Images/Figma 2.png">
+          
+            
+          <p>
+            The following pictures are part of my Figma Design portfoiio, where I have a MacBook wallpaper, then once you click the picture it'll transition into the opposite colors.
+          </p>
+          </div>
+        </div>
+      </div>
+    </section>
+        <div class="project project-2">
+          <h3>Project 2</h3>
+          <p>
+            The following is an event planner where the user will input an event
+            name, date of the event, location of the event, and a description.
+          </p>
+          <br />
+          <h1>Create Event</h1>
+          <div class="container">
+            <form id="event-form">
+              <div class="form-group">
+                <label for="event-name">Event Name:</label>
+                <input
+                  type="text"
+                  id="event-name"
+                  name="event-name"
+                  required
+                  autocomplete="off"
+                />
+              </div>
+              <div class="form-group">
+                <label for="event-date">Event Date:</label>
+                <input
+                  type="date"
+                  id="event-date"
+                  name="event-date"
+                  required
+                  autocomplete="off"
+                />
+              </div>
+              <div class="form-group">
+                <label for="event-location">Event Location:</label>
+                <input
+                  type="text"
+                  id="event-location"
+                  name="event-location"
+                  required
+                  autocomplete="off"
+                />
+              </div>
+              <div class="form-group">
+                <label for="event-description">Event Description:</label>
+                <textarea
+                  id="event-description"
+                  name="event-description"
+                  required
+                  autocomplete="off"
+                ></textarea>
+              </div>
+              <div class="form-group">
+                <button type="submit">Create Event</button>
+              </div>
+            </form>
+          </div>
+
+          <!-- Add events container below the form -->
+          <div id="events-container"></div>
+
+          <script src="eventPlanner.js"></script>
+        </div>
+        <div class="project project-3">
+          <h3>Project 3 - Countdown Timer</h3>
+          <p>Create a countdown timer where the user can input the date and name of the event, and it will count down to that event.</p>
+          <br />
+          <h1>Countdown Timer</h1>
+          <div class="container">
+            <div class="event-info">
+              <label for="countdown-event-name">Event Name:</label>
+              <input type="text" id="countdown-event-name" required autocomplete="off" />
+            </div>
+            <div class="event-info">
+              <label for="countdown-date">Event Date:</label>
+              <!-- Modified input type to allow date selection without the time options -->
+              <input type="date" id="countdown-date" required />
+            </div>
+            <div class="countdown-actions">
+              <button id="start-countdown-btn">Start Countdown</button>
+              <button id="cancel-countdown-btn">Cancel Countdown</button>
+            </div>
+            <div id="countdown-content" class="countdown-timer">
+              <div class="countdown-number"></div>
+            </div>
+            <div class="error-message" style="color: red; display: none;">
+              Please enter a valid event name!
+            </div>
+          </div>
+        </div>
+        
+        
+      <script src="countdownTimer.js"></script>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2023 Braden Skiffington</p>
+      </div>
+    </footer>
+
+    <script src="snake_game.js"></script>
+    <script src="script.js"></script>
+  </body>
+  </center>
+</html>
